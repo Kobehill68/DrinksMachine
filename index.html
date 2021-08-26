@@ -5,12 +5,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>Drink Machine</title>
 </head>
 
 <body>
     <h1>Drinks Machine</h1>
-        
+
+    <form>
+        <span><div class="money">Pennys:</div></span> <input type="text" name="pennys" id="pennys" placeholder="0" value="0" oninput="tally()">
+        <br>
+        <span><div class="money">Nickels:</div></span> <input type="text" name="nickels" id="nickels" placeholder="0" value="0" oninput="tally()">
+        <br>
+        <span><div class="money">Dimes:</div></span> <input type="text" name="dimes" id="dimes" placeholder="0" value="0" oninput="tally()">
+        <br>
+        <span><div class="money">Quarters:</div></span> <input type="text" name="quarters" id="quarters" placeholder="0" value="0" oninput="tally()">
+    </form>
+
+    <div class="btn">
+        <button class="button" value="Coke" id="coke" onclick="dispenseSoda(0)"><div class="pop">Coke</div></button>
+        <button class="button"  value="Pepsi" id="pepsi" onclick="dispenseSoda(1)"><div class="pop">Pepsi</div></button>
+        <button class="button"  value="Soda" id="soda" onclick="dispenseSoda(2)"><div class="pop">Soda</div></button>
+        <br>
+        <div class="cancle"><button class="button2"  value="Cancle" id="cancle" onclick="cancel()"><div class="pop">Cancle</div></button></div>
+    </div>
+
+    <h2>Total Entered: $<span id="paid">0.00</span></h2>
+    <h2 id="message" class="buttom">Insert money first. Select a soda.</h2>
+
+    <script src="./index.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,59 @@
+body {
+  background-color:rosybrown;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+.buttom {
+  margin-left: 1rem;
+}
+
+form {
+  text-align: center;
+  font-size: large;
+}
+
+.money {
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+.btn {
+  text-align: center;
+  margin-top: 1rem;
+  text-decoration:none;
+}
+
+.cancle {
+  margin-top: 10px;
+  
+}
+
+.pop {
+    font-weight: bold;
+}
+
+.button {
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+.button2 {
+    transition-duration: 0.4s;
+}
+
+.button2:hover {
+    background-color:red; 
+    color: white;
+}
